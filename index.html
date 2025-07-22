@@ -31,5 +31,17 @@
       ></a-sphere>
 
     </a-scene>
+    <video id="testCam" autoplay playsinline muted style="width:100%; max-height:200px; border:2px solid red;"></video>
+<script>
+  navigator.mediaDevices.getUserMedia({ video: { facingMode: 'environment' } })
+    .then(stream => {
+      document.getElementById('testCam').srcObject = stream;
+      console.log("Caméra OK");
+    })
+    .catch(err => {
+      console.error("Erreur caméra :", err);
+    });
+</script>
+
   </body>
 </html>
