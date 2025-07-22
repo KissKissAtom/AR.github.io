@@ -47,10 +47,14 @@
   window.addEventListener('gps-camera-update-position', (e) => {
     const coords = e.detail.position;
     const el = document.getElementById('gpsText');
-    el.setAttribute('text', 'value', `Lat: ${coords.latitude.toFixed(5)}\nLon: ${coords.longitude.toFixed(5)}`);
+
+    // ✅ Corrigé ici :
+    el.setAttribute('value', `Lat: ${coords.latitude.toFixed(5)}\nLon: ${coords.longitude.toFixed(5)}`);
+
     console.log("GPS:", coords);
   });
 </script>
+
 
 
   </body>
