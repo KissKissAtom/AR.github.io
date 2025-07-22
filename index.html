@@ -31,6 +31,20 @@
     scale="1 1 1"
   ></a-box>
 </a-scene>
+<a-entity
+  position="0 2 -5"
+  text="value: Position...; color: white; width: 6;"
+  id="gpsText"
+></a-entity>
+
+<script>
+  window.addEventListener('gps-camera-update-position', (e) => {
+    const coords = e.detail.position;
+    const el = document.getElementById('gpsText');
+    el.setAttribute('text', 'value', `Lat: ${coords.latitude.toFixed(5)}\nLon: ${coords.longitude.toFixed(5)}`);
+    console.log("GPS:", coords);
+  });
+</script>
 
 
   </body>
