@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR.js Geo Point</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ar.js@3.4.2/aframe/build/aframe-ar.min.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene
+      embedded
+      vr-mode-ui="enabled: false"
+      arjs="sourceType: webcam; gpsMinAccuracy: 100; debugUIEnabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+    >
+
+      <!-- Caméra AR avec GPS activé -->
+      <a-camera gps-camera rotation-reader></a-camera>
+
+      <!-- Objet géolocalisé -->
+      <a-sphere 
+        gps-entity-place="latitude: 45.7762351; longitude: 3.085082;"  
+        radius="2"
+        color="red"
+        position="0 0 0"
+      ></a-sphere>
+    </a-scene>
+  </body>
+</html>
