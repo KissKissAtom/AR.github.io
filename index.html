@@ -1,53 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AR.js A-Frame Location-based2</title>
-<script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js'></script>
-<script type='text/javascript' src='https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js'></script>
+  <title>AR.js A-Frame Location-based2</title>
+  <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js"></script>
+  <script type="text/javascript" src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"></script>
 </head>
 <body>
-<a-scene vr-mode-ui='enabled: false' arjs='sourceType: webcam; videoTexture: true; debugUIEnabled: false' renderer='antialias: true; alpha: true'>
-    <a-camera gps-new-camera='gpsMinDistance: 5'></a-camera>
-    <a-box color="red" gps-new-entity-place="latitude: 45.77622542056777; longitude: 3.085409693938061" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.77648297170218; longitude: 3.0853850759625296" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.776714106322835; longitude: 3.085386969652956" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.77692014551986; longitude: 3.085373713819978" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.77714335379089; longitude: 3.0853888633433817" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.77733750463733; longitude: 3.08539833179551" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.77749203237892; longitude: 3.0855630828625267" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.777703351674205; longitude: 3.0855630828625267" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.77790014204779; longitude: 3.085648298931673" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.778115421996574; longitude: 3.085661554764652" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.778337304755; longitude: 3.0856785979784815" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.778469377406296; longitude: 3.0858925849965604" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.77851164058864; longitude: 3.0862694293912303" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.77868201371762; longitude: 3.086439861529523" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.778889366358314; longitude: 3.086259960939103" depth="20" height="20" width="20"></a-box>
-     <a-box color="red" gps-new-entity-place="latitude: 45.77895540206924; longitude: 3.0859172029720914" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.779164074401784; longitude: 3.085958864161452" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.779417649856065; longitude: 3.0860024190412383" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.77968443112037; longitude: 3.0860289307071955" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.77987989381074; longitude: 3.086049761301874" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.780083279936775; longitude: 3.086108465705064" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.78034873733583; longitude: 3.0861444458231477" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.78061419347105; longitude: 3.0862315555827204" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.78081757691853; longitude: 3.086532652360371" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.78091398569612; longitude: 3.0869549453252536" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.78100114965294; longitude: 3.0873583013858803" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.781096237450406; longitude: 3.087765444827358" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.78120981432928; longitude: 3.088236973743302" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.7812771679505; longitude: 3.0886725225411618" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.78124679279806; longitude: 3.0891440514571067" depth="20" height="20" width="20"></a-box>
-       <a-box color="green" gps-new-entity-place="latitude: 45.78119528706698; longitude: 3.089575812874115" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.78110284076365; longitude: 3.0899753815538915" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.78141187494883; longitude: 3.0900549165517615" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.78136565199588; longitude: 3.090520764396429" depth="20" height="20" width="20"></a-box>
-        <a-box color="red" gps-new-entity-place="latitude: 45.78131942900462; longitude: 3.0909468447421617" depth="10" height="10" width="10"></a-box>
-    <a-box color="blue" gps-new-entity-place="latitude: 45.78129961913949; longitude: 3.0914732906804447" depth="30" height="30" width="30"></a-box>
-    <a-box color="green" gps-new-entity-place="latitude: 45.78141187494883; longitude: 3.091590699486824" depth="20" height="20" width="20"></a-box>
-    
-    
-</a-scene>
+  <a-scene 
+    vr-mode-ui="enabled: false" 
+    arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false" 
+    renderer="antialias: true; alpha: true"
+  >
+    <a-camera gps-new-camera="gpsMinDistance: 5"></a-camera>
+
+    <!-- Tous les points GPS, chaque <a-box> a maintenant la classe "ar-point" -->
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77622542056777; longitude: 3.085409693938061" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77648297170218; longitude: 3.0853850759625296" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.776714106322835; longitude: 3.085386969652956" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77692014551986; longitude: 3.085373713819978" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77714335379089; longitude: 3.0853888633433817" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.77733750463733; longitude: 3.08539833179551" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77749203237892; longitude: 3.0855630828625267" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.777703351674205; longitude: 3.0855630828625267" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.77790014204779; longitude: 3.085648298931673" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.778115421996574; longitude: 3.085661554764652" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.778337304755; longitude: 3.0856785979784815" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.778469377406296; longitude: 3.0858925849965604" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77851164058864; longitude: 3.0862694293912303" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77868201371762; longitude: 3.086439861529523" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.778889366358314; longitude: 3.086259960939103" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77895540206924; longitude: 3.0859172029720914" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.779164074401784; longitude: 3.085958864161452" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.779417649856065; longitude: 3.0860024190412383" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77968443112037; longitude: 3.0860289307071955" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77987989381074; longitude: 3.086049761301874" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.780083279936775; longitude: 3.086108465705064" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.78034873733583; longitude: 3.0861444458231477" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.78061419347105; longitude: 3.0862315555827204" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.78081757691853; longitude: 3.086532652360371" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.78091398569612; longitude: 3.0869549453252536" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.78100114965294; longitude: 3.0873583013858803" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.781096237450406; longitude: 3.087765444827358" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.78120981432928; longitude: 3.088236973743302" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.7812771679505; longitude: 3.0886725225411618" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.78124679279806; longitude: 3.0891440514571067" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.78119528706698; longitude: 3.089575812874115" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.78110284076365; longitude: 3.0899753815538915" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.78141187494883; longitude: 3.0900549165517615" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.78136565199588; longitude: 3.090520764396429" depth="20" height="20" width="20"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.78131942900462; longitude: 3.0909468447421617" depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.78129961913949; longitude: 3.0914732906804447" depth="30" height="30" width="30"></a-box>
+    <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.78141187494883; longitude: 3.091590699486824" depth="20" height="20" width="20"></a-box>
+
+  </a-scene>
+
+  <!-- Script de filtrage par distance -->
+  <script>
+    function getDistanceFromLatLonInMeters(lat1, lon1, lat2, lon2) {
+      const R = 6371000;
+      const dLat = (lat2 - lat1) * Math.PI / 180;
+      const dLon = (lon2 - lon1) * Math.PI / 180;
+      const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+        Math.sin(dLon / 2) * Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    }
+
+    document.querySelector('a-scene').addEventListener('gps-camera-update-position', e => {
+      const userLat = e.detail.position.latitude;
+      const userLon = e.detail.position.longitude;
+
+      document.querySelectorAll('.ar-point').forEach(box => {
+        const gps = box.getAttribute('gps-new-entity-place');
+        const lat = parseFloat(gps.split('latitude:')[1].split(';')[0]);
+        const lon = parseFloat(gps.split('longitude:')[1]);
+        const distance = getDistanceFromLatLonInMeters(userLat, userLon, lat, lon);
+
+        box.setAttribute('visible', distance <= 50); // Affiche seulement si <= 50m
+      });
+    });
+  </script>
 </body>
 </html>
