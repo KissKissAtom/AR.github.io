@@ -14,25 +14,23 @@
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
   
-    <a-camera gps-camera="minDistance: 5;"  rotation-reader></a-camera>
+    <a-camera rotation-reader></a-camera>
 
     <!-- Tous les points GPS, chaque <a-box> a maintenant la classe "ar-point" -->
    	<a-sphere class="ar-point" color="red" gps-new-entity-place="latitude: 45.77668; longitude: 3.08516"   position="0 0.5 0  radius="0.75"></a-sphere>
-    	<a-sphere class="ar-point" color="red" gps-new-entity-place="latitude: 45.77679; longitude: 3.08516"  position="0 0.5 0  radius="0.75"></a-sphere>
-	<a-sphere class="ar-point" color="red" gps-new-entity-place="latitude: 45.77692; longitude: 3.08515" position="0 0.5 0  radius="0.75"></a-sphere>
-   	<a-sphere class="ar-point" color="red" gps-new-entity-place="latitude: 45.77706; longitude: 3.08515"  position="0 0.5 0  radius="0.75"></a-sphere>
-	<a-sphere class="ar-point" color="red" gps-new-entity-place="latitude: 45.77647; longitude: 3.08516" position="0 0.5 0  radius="0.75"></a-sphere>
+    	<a-sphere class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77679; longitude: 3.08516"  position="0 0.5 0  radius="0.75"></a-sphere>
+
 
 
 
 	  
-    <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77622; longitude: 3.08540" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
+    <!--<a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77622; longitude: 3.08540" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
     <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77648; longitude: 3.08538" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
     <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77671; longitude: 3.08538" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
     <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77692; longitude: 3.08537" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
     <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.77714; longitude: 3.08538" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
     <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77733; longitude: 3.08539" position="0 1.5 0 depth="1.5 height="1.5" width="1.5"></a-box>
-  <!--  <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77749203237892; longitude: 3.0855630828625267" look-at="[gps-camera]"depth="10" height="10" width="10"></a-box>
+    <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.77749203237892; longitude: 3.0855630828625267" look-at="[gps-camera]"depth="10" height="10" width="10"></a-box>
     <a-box class="ar-point" color="blue" gps-new-entity-place="latitude: 45.777703351674205; longitude: 3.0855630828625267" look-at="[gps-camera]"depth="10" height="10" width="10"></a-box>
     <a-box class="ar-point" color="green" gps-new-entity-place="latitude: 45.77790014204779; longitude: 3.085648298931673"look-at="[gps-camera]" depth="10" height="10" width="10"></a-box>
     <a-box class="ar-point" color="red" gps-new-entity-place="latitude: 45.778115421996574; longitude: 3.085661554764652" look-at="[gps-camera]"depth="10" height="10" width="10"></a-box>
