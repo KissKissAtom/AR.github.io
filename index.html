@@ -43,13 +43,23 @@
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-scene>
     <script>
-      window.addEventListener('load', () => {
-        const text = document.getElementById('text');
-        text.addEventListener('gps-entity-place-update-position', (event) => {
-          document.getElementById('debug').textContent = `あと${event.detail.distance}m`;
-          text.setAttribute('value', text.getAttribute('distanceMsg') + ' left');
-        });
-      });
+<script>
+  window.addEventListener('load', () => {
+    const text = document.getElementById('text');
+    const debug = document.getElementById('debug');
+
+    text.addEventListener('gps-entity-place-update-position', (event) => {
+      const distance = event.detail.distance;
+
+      // Affichage dans le débogueur
+      debug.textContent = `Distance : ${distance.toFixed(2)} m`;
+
+      // Affichage dans l'entité texte
+      text.setAttribute('value', `${distance.toFixed(1)} m left`);
+    });
+  });
+</script>
+
     </script>
   </body>
 </html>
