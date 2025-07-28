@@ -75,11 +75,9 @@
 
 <script>
 
-document.addEventListener('click', function (evt) {
-  const target = evt.target;
-  if (target.classList.contains('poi')) {
-    alert("Vous avez cliqué sur un point d'intérêt !");
-  }
+const dragon = document.querySelector('[gps-new-entity-place]');
+dragon.addEventListener('click', e => {
+  alert('Clic sur le dragon !');
 });
 
 	
