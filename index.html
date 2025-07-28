@@ -23,6 +23,10 @@
 	<a-assets>
        		 <a-asset-items id="dragon" src="models/point3D2_clique.gltf" ></a-asset-items>
      	 </a-assets>
+	   
+	<a-assets>
+       		 <a-asset-items id="panneau" src="models/panneau.gltf" ></a-asset-items>
+     	 </a-assets>
   
 <a-camera id='camera1' look-controls-enabled='false' arjs-device-orientation-controls='smoothingFactor: 0.1' gps-new-camera='gpsMinDistance: 5' far="1000" > </a-camera>
 
@@ -59,8 +63,8 @@
 	<a-entity
 		cursor="fuse: false; rayOrigin: mouse"
           raycaster="objects: .poi"
-       		gps-new-entity-place="latitude: 45.77744890955885; longitude: 3.0854141756468056;"
-        	gltf-model="#dragon"
+       		gps-new-entity-place="latitude: 45.77748672133725; longitude: 3.0854141756468056;"
+        	gltf-model="#panneau"
         	scale="3 3 3"
         	rotation="10 10 10"
         	position="0 -1 0"
@@ -68,13 +72,13 @@
 		class="poi"
       ></a-entity>
 
-	  <!-- <a-image 
-    gps-new-entity-place="latitude: 45.776912; longitude: 3.085093;"
+	  <a-image 
+    gps-new-entity-place="latitude: 45.776912; longitude: 3.0856243844092024;"
     src="models/pointIMG.png"
     width="10"
     height="10"
     look-at="[gps-camera]">
-</a-image>-->
+</a-image>
 
 	  
   
