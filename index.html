@@ -19,10 +19,24 @@
       vr-mode-ui="enabled: false"
       arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false;"
     >
+
+	<a-assets>
+       		 <a-asset-items id="dragon" src="models/point3D.glb" ></a-asset-items>
+     	 </a-assets>
   
 <a-camera id='camera1' look-controls-enabled='false' arjs-device-orientation-controls='smoothingFactor: 0.1' gps-new-camera='gpsMinDistance: 5' minDistance= '10' > </a-camera>
 
    <a-sphere class="ar-point" color="blue" gps-new-entity-place="latitude: 45.776785; longitude: 3.085093"    radius="0.75"></a-sphere>
+
+
+	    <a-entity
+        gps-new-entity-place="latitude: 45.776785; longitude: 3.085093;"
+        gltf-model="#dragon"
+        scale="7 7 7"
+        rotation="0 0 0"
+        pisition="0 -1 0"
+        
+      ></a-entity>
     	
 
 	
